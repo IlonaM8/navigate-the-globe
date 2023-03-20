@@ -1,0 +1,115 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Spinnaker&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(34,193,195);
+    /* background: url(https://images.unsplash.com/photo-1552764217-6d34d9795ab9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80); */
+    background: url(https://images.unsplash.com/photo-1594836381416-5e5b1deca70c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow:scroll;
+    max-height: 100%;
+    max-width: fit-content;
+    font-family: 'Spinnaker', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* */
+.header{
+    padding-left: 60px;
+    padding-top: 50px;
+    color: rgb(18, 162, 112);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.subheading{
+    padding-left: 60px;
+    padding-top: 0px;
+    color: rgb(40, 39, 37);
+    line-height: 1.6;
+    font-size: 0.8rem;
+}
+
+
+
+/* input*/
+input{
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 46px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color:  rgba(253,187,45,1);
+}
+
+#search{
+    font-family: 'Spinnaker', sans-serif;
+    font-size: 16px;
+    color: white
+}
+::placeholder{
+    color: white;
+}
+
+.search-box{
+    padding-top: 50px;
+}
+.autocomplete-form{
+ background-color:  rgba(253,187,45,1);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 350px;
+ height: 65px;
+ border-radius: 20px;
+ box-shadow: 0 0.125em 1.3125em rgba(253,187,45,1);
+}
+
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+.countryList{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgb(34,193,195);
+    background: linear-gradient(120deg,  rgba(253,187,45,1) 0%,  rgb(28, 169, 172) 100%);
+    box-shadow: 0 4px 13px rgba(34,193,195, 0.3);
+    border-radius: 20px;
+    width: 350px;
+    height: 150px;
+
+}
+
+
+
