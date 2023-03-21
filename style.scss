@@ -45,6 +45,7 @@ body {
 header {
 	padding-left: 20px;
 	@include flex-center;
+	flex-wrap: wrap;
 	gap: 10px;
     // background-color: $bg-color-yellow;
 }
@@ -401,6 +402,7 @@ input {
 	}
 	h1 {
 		font-size: 6rem;
+		color: red;
 	}
 	p {
 		font-size: 3rem;
@@ -411,12 +413,14 @@ input {
 	}
 	input {
 		width: 510px;
-		height: 85px;
+		height: 100px;
 		border-radius: 25px;
 		font-size: 2rem;
 	}
 	.autocomplete-form {
 		width: 510px;
+		height: 100px;
+
 	}
 	.card-body {
 		gap: 20px;
