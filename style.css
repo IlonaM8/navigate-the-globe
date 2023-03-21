@@ -25,7 +25,7 @@ body{
 }
 
 header {
-    background-color: rgba(239, 210, 172, 0.2);
+    background-color: #efd2ac80;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
@@ -35,18 +35,18 @@ header {
 
 h1{
     font-size: 2.6rem;
-    color: rgb(18, 162, 112);
+    color:#061D16;
 }
 
 p{
     font-size: 1.2rem;
-    color: rgb(19, 90, 66);
+    color: #061D16;
 }
 
 h2{
     padding-top: 20px;
-    color: rgb(40, 39, 37);
-    /* font-size: 1.6rem; */
+    color: #061D16;
+
 }
 
 main{
@@ -132,7 +132,7 @@ input{
     header {
         padding: 24px;
         gap: 5px;
-        background-color: rgba(239, 210, 172, 0.5);
+        background-color: #efd2ac80;
     }
 
     h1{
@@ -141,14 +141,12 @@ input{
 
     p{
         font-size: 1rem;
-        color: rgb(19, 90, 66);
 
     }
 
     h2{
         font-size: 1.5rem;
         padding-top: 10px;
-        color: black;
     }
 
     .card-body{
@@ -187,7 +185,6 @@ input{
     h2{
         font-size: 1.4rem;
         padding-top: 10px;
-        color: black;
     }
 
     input{
@@ -230,7 +227,6 @@ input{
     h2{
         font-size: 1.6rem;
         padding-top: 10px;
-        color: black;
     }
 
     input{
@@ -272,7 +268,6 @@ input{
     h2{
         font-size: 1.6rem;
         padding-top: 10px;
-        color: black;
     }
 
     input{
@@ -314,7 +309,6 @@ input{
     h2{
         font-size: 1.4rem;
         padding-top: 10px;
-        color: black;
     }
 
     input{
