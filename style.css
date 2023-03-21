@@ -41,6 +41,8 @@ p {
 
 h2 {
   padding-top: 20px;
+  background-color: cornflowerblue;
+  max-width: 100vw;
   color: #061D16;
 }
 
