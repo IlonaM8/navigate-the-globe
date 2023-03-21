@@ -1,0 +1,429 @@
+$color_green: rgb(18, 162, 112);
+$color_dark-green: #061D16;
+$color_white: white;
+$background-gradient: linear-gradient(0deg, rgb(156, 249, 199) 0%, rgb(253, 242, 216) 100%);
+$card-gradient: linear-gradient(120deg, rgba(253,187,45,1) 0%, rgb(28, 169, 172) 100%);
+$font-family_spinnaker: 'Spinnaker', sans-serif;
+$background-color_yellow: rgba(253,187,45,1);
+$background-color_peach: #efd2ac80;
+$background-color_pale-peace: rgba(239, 210, 172, 0.5);
+$box-shadow-input: 0 0.125em 1.3125em rgba(253, 187, 45, 1);
+$box-shadow-card: 0 4px 13px rgba(34,193,195, 0.3);
+$border-radius: 20px;
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Spinnaker&display=swap";
+
+//Mixins
+    @mixin flex-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+// Global style
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+//Body style
+body {
+	background: $background-gradient;
+	overflow-y: scroll;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	max-width: 100vw;
+	overflow-x: hidden;
+	font-family: $font-family_spinnaker;
+    @include flex-center;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+// Header style
+header {
+	padding-left: 20px;
+	@include flex-center;
+	gap: 10px;
+    // background-color: $bg-color-yellow;
+}
+h1 {
+	font-size: 2.6rem;
+	color: $color_green;
+}
+p {
+	font-size: 1.2rem;
+	color: $color_dark-green;
+}
+h2 {
+	padding-top: 20px;
+	color: $color_dark-green;
+}
+main {
+	@include flex-center;
+	justify-content: center;
+	padding-top: 50px;
+}
+input {
+	border: none;
+	outline: none;
+	width: 300px;
+	height: 46px;
+	padding: 20px;
+	border-radius: 12px;
+	background-color: $background-color_yellow;
+	font-family: $font-family_spinnaker;
+	font-size: 20px;
+	color: $color_white;
+}
+
+::placeholder {
+	color: $color_white;
+}
+.search-box {
+	padding-top: 50px;
+}
+.autocomplete-form {
+	background-color: $background-color_yellow;
+	@include flex-center;
+    justify-content: center;
+	width: 300px;
+	height: 65px;
+	border-radius: $border-radius;
+	box-shadow: $box-shadow-input;
+}
+.card-container {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+}
+.countryList {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.card-body {
+    @include flex-center;
+	justify-content: center;
+	text-align: center;
+	gap: 20px;
+	color: $color_white;
+	background: rgb(34,193,195);
+	background: $card-gradient;
+	box-shadow: $box-shadow-card;
+	border-radius: $border-radius;
+	width: 300px;
+	height: 150px;
+}
+@media screen and (max-width: 360px) {
+	header {
+		padding: 24px;
+		gap: 5px;
+		background-color: $background-color_peach;
+	}
+	h1 {
+		font-size: 2.4rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+		padding-top: 10px;
+	}
+	.card-body {
+		gap: 10px;
+		width: 240px;
+		height: 110px;
+	}
+	input {
+		width: 240px;
+	}
+	.autocomplete-form {
+		width: 240px;
+	}
+}
+@media screen and (min-width: 361px) and (max-width: 500px) {
+	header {
+		padding: 24px;
+		gap: 5px;
+		background-color: $background-color_pale-peace;
+	}
+	h1 {
+		font-size: 2.9rem;
+	}
+	p {
+		font-size: 1.1rem;
+	}
+	h2 {
+		font-size: 1.4rem;
+		padding-top: 10px;
+	}
+	input {
+		width: 250px;
+	}
+	.autocomplete-form {
+		width: 250px;
+	}
+	.card-body {
+		gap: 10px;
+		width: 250px;
+		height: 110px;
+	}
+	.countryList {
+		font-size: 18px;
+	}
+}
+@media screen and (min-width: 501px) and (max-width: 616px) {
+	header {
+		gap: 5px;
+		background-color: $background-color_pale-peace;
+	}
+	h1 {
+		font-size: 3.3rem;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+	h2 {
+		font-size: 1.6rem;
+		padding-top: 10px;
+	}
+	input {
+		width: 300px;
+	}
+	.autocomplete-form {
+		width: 300px;
+	}
+	.card-body {
+		gap: 10px;
+		width: 300px;
+		height: 150px;
+	}
+	.countryList {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 617px) and (max-width: 657px) {
+	header {
+		gap: 5px;
+		background-color: $background-color_pale-peace;
+	}
+	h1 {
+		font-size: 3.4rem;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+	h2 {
+		font-size: 1.6rem;
+		padding-top: 10px;
+	}
+	input {
+		width: 300px;
+		font-size: 18px;
+	}
+	.autocomplete-form {
+		width: 300px;
+	}
+	.card-body {
+		gap: 10px;
+		width: 300px;
+		height: 150px;
+	}
+	.countryList {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 657px) and (max-width: 724px) {
+	header {
+		gap: 5px;
+		background-color: $background-color_pale-peace;
+	}
+	h1 {
+		font-size: 3.4rem;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+	h2 {
+		font-size: 1.4rem;
+		padding-top: 10px;
+	}
+	input {
+		width: 300px;
+	}
+	.autocomplete-form {
+		width: 300px;
+	}
+	.card-body {
+		gap: 10px;
+		width: 300px;
+		height: 150px;
+	}
+	.countryList {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 724px) and (max-width: 792px) {
+	header {
+		gap: 5px;
+	}
+	h1 {
+		font-size: 2.5rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+	h2 {
+		font-size: 1.2rem;
+		padding-top: 10px;
+	}
+	input {
+		width: 300px;
+	}
+	.autocomplete-form {
+		width: 300px;
+	}
+	.card-body {
+		gap: 10px;
+		width: 300px;
+		height: 150px;
+	}
+	.countryList {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 1033px) and (max-width: 1442px) {
+	header {
+		padding: 40px;
+		gap: 10px;
+	}
+	h1 {
+		font-size: 4.2rem;
+	}
+	p {
+		font-size: 1.9rem;
+	}
+	h2 {
+		font-size: 2.6rem;
+		padding-top: 20px;
+	}
+	input {
+		width: 380px;
+		font-size: 2rem;
+		height: 85px;
+		border-radius: 25px;
+	}
+	.autocomplete-form {
+		width: 380px;
+	}
+	.card-body {
+		gap: 10px;
+		width: 380px;
+		height: 180px;
+	}
+	.countryList {
+		font-size: 1.8rem;
+	}
+}
+@media screen and (min-width: 1443px) and (max-width: 1742px) {
+	header {
+		padding: 40px;
+		gap: 10px;
+	}
+	h1 {
+		font-size: 4.4rem;
+	}
+	p {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 2.8rem;
+		padding-top: 20px;
+	}
+	input {
+		width: 490px;
+		font-size: 2rem;
+		height: 85px;
+		border-radius: 25px;
+	}
+	.autocomplete-form {
+		width: 490px;
+	}
+	.card-body {
+		gap: 10px;
+		width: 490px;
+		height: 190px;
+	}
+	.countryList {
+		font-size: 2rem;
+	}
+}
+@media screen and (min-width: 1743px) and (max-width: 1942px) {
+	header {
+		padding: 60px;
+		gap: 10px;
+	}
+	h1 {
+		font-size: 4.6rem;
+	}
+	p {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 3rem;
+		padding-top: 10px;
+	}
+	input {
+		width: 490px;
+		font-size: 2rem;
+		height: 85px;
+		border-radius: 25px;
+	}
+	.autocomplete-form {
+		width: 490px;
+	}
+	.card-body {
+		gap: 10px;
+		width: 490px;
+		height: 220px;
+	}
+	.countryList {
+		font-size: 2rem;
+	}
+}
+@media screen and (min-width: 1943px) {
+	header {
+		padding: 60px;
+		gap: 10px;
+	}
+	h1 {
+		font-size: 6rem;
+	}
+	p {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 4rem;
+		padding-top: 60px;
+	}
+	input {
+		width: 510px;
+		height: 85px;
+		border-radius: 25px;
+		font-size: 2rem;
+	}
+	.autocomplete-form {
+		width: 510px;
+	}
+	.card-body {
+		gap: 20px;
+		width: 510px;
+		height: 220px;
+	}
+	.countryList {
+		font-size: 2.1rem;
+	}
+}
