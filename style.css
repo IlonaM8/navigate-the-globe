@@ -10,8 +10,6 @@
 
 
 body{
-    background-color: rgb(34,193,195);
-    /* background: url(https://images.unsplash.com/photo-1552764217-6d34d9795ab9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80); */
     background: url(https://images.unsplash.com/photo-1594836381416-5e5b1deca70c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
     background-size: cover;
     overflow-y:scroll;
