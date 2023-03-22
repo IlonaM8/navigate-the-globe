@@ -10,7 +10,6 @@ To get started, simply enter the name of the country you're interested in into t
 
 ## Demo
 
-Insert gif or link to demo
 
 https://ilonam8.github.io/navigate-the-globe/
 
